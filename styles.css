@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    padding-top: 80px;
+    background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#wave, #hello {
+    font-size: 100px;
+    display: inline; 
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    margin-right: 40px;
+}
+
+.logo {
+    font-size: 38Spx;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+    width:auto;
+     /* Ensure the hero section takes the full viewport height */
+}
+
+.hero-text {
+    max-width: 600px; /* Adjust as needed */ /* Hide any overflow */ /* Add ellipsis if the text is too long */
+    margin-right: 20px; 
+    font-size: 20px;
+    flex: 2;
+    font-size: 15px;
+}
+
+#hero-stuff {
+    border-radius: 20px;
+}
+
+#hero-paragraph {
+    justify-self: center;
+    align-self: center;
+    color: wheat
+}
+
+.hero-image {
+    border: 10px solid #555; /* Adjust border thickness and color */
+    padding: 20px; /* Adjust padding */
+    border-radius: 20px;
+    margin-top:30px; /* Adjust border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+
+.animated-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
+}
+
+#hero-stuff {
+    border-radius: 0 0 20px 20px; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#interests {
+    height: 400px;
+}
+
+#interest-header {
+ font-size: 80px;
+}
+
+#interest-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    width: 800px;
+}
+
+.grid-item {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+}
+
+#herotoo {
+    font-size: 20px;
+}
+
+#hero-text-2 {
+    background-color: #33bbcf;
+    justify-content: center;
+}
+
+#jits {
+    margin-left: 80px;
+    text-align: center;
+    background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+}
+
+#guitar {
+    margin-left: 80px;
+    text-align: center;
+    background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+}
+
+#game {
+    margin-left: 80px;
+    text-align: center;
+    background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+}
+
+.video-container {
+    width:380px; 
+    height: 190px; /* Set the width to a percentage of the grid item's width */
+    position: relative;
+    padding-bottom: 28.125%; 
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.github-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1900px;
+}
+
+.portfolio-section {
+   
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 75vh;
+    background: #212121;
+    color:#cdcdcd;
+}
+
+.project {
+    margin: 20px;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
